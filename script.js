@@ -13,18 +13,20 @@ function reset(){
     
 }
 function selectSet(set){
+    var all=document.getElementsByClassName('set-button');
+    for(var i=0;i<all.length;i++){
+        all[i].style.backgroundColor='#29E6B4';
+    }
     selectedSet=JSON.parse(localStorage.getItem(set));
     selectedSetName=set;
     console.log(selectedSet);
-    document.getElementById('reset').style.display='none';
-    document.getElementById('setOne').style.display='none';
-    document.getElementById('setTwo').style.display='none';
-    document.getElementById('setThree').style.display='none';
-    document.getElementById('select').style.display='block';
+    document.getElementById('reset').disabled=false;
+    document.getElementById('select').disabled=false;
+    document.getElementById(set).style.backgroundColor='#E65629'
 }
 function selectItem(){
     selection=selectionAlgorithm();
-
+    
     console.log(selection);
     var lastOccur=debugArray.lastIndexOf(selection);
     debugArray.push(selection);

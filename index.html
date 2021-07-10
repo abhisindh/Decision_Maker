@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shirt selector</title>
+    <title>Decision Maker</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <button id="reset" onclick="reset()">reset</button>
-    <button id="select" onclick="selectItem()">select</button>
-    <button id="setOne" onclick="selectSet('setOne')">set 1</button>
-    <button id="setTwo" onclick="selectSet('setTwo')">set 2</button>
-   <button id="setThree"onclick="selectSet('setThree')">set 3</button>
-    <img width="90vw"  id="image" src="" alt="" >
-  
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <div class="setBox">
+            <button class="set-button" id="setOne"   onclick="selectSet('setOne')">set 1</button>
+            <button class="set-button" id="setTwo" onclick="selectSet('setTwo')">set 2</button>
+            <button class="set-button" id="setThree" onclick="selectSet('setThree')">set 3</button>
+            <button class="set-button" id="setFour" onclick="selectSet('setFour')">set 4</button>
+            <button class="set-button" id="setFive" onclick="selectSet('setFive')">set 5</button>
+            <button class="set-button" id="setSix" onclick="selectSet('setSix')">set 6</button>
+            
+            
+        </div>
+        <div class="imageBox">
+            <button disabled onclick="selectItem()" id="select">Select</button>
+            <img id="image" height="100px" width="100px" src="" alt="" srcset="">
+            <button onclick="reset()" id="reset">Reset</button>
+            
+        </div>
+
+    </div>
+    
 </body>
 </html>
