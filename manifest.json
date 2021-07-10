@@ -1,7 +1,9 @@
 {
     "short_name": "Decision Maker",
     "name": "App to make decision",
-    "icons":[{"src":"/icons/android-chrome-512x512.png",
+    "icons":[{"src":"icons/android-chrome-192x192.png",
+         "sizes":"192x192",
+         "type":"image/png"},{"src":"/icons/android-chrome-512x512.png",
             "sizes":"512x512",
             "type":"image/png"},
         {"src":"/icons/maskable_icon.png",
@@ -11,7 +13,7 @@
     "start_url": "index.html",
     "background_color": "#E6295B",
     "display": "standalone",
-    "scope": "../",
+    "scope": "./",
     "theme_color": "#29E6B4",
     "prefer_related_applications": true
 }
